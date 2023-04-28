@@ -15,4 +15,7 @@ The homepage of our website opens up with a small form to input the location and
 The mizoram police would be able to administer through the password protected website 's admin page where detailed data about any  criminal act could 
 
 Note- Currently we have just entered a sample database to check the working of the website . However, once handed to The mizoram police, the database can easily be updated making it functional in real time!
-WORKING PRINCIPLE 
+
+    WORKING PRINCIPLE
+Packages you need to install before running website are given in requirements.txt.
+After installation, go to predictor folder, and open command line, and enter `python manage.py runserver`. It will run website on localhost:8000.
