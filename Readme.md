@@ -25,7 +25,9 @@ As said before, our website works on a real criminal act based database updated 
 2. Updating the database as an admin.
 Our website checks the frequency of  criminal acts in a 2 hour wide window around the required time in the required location, it predicts the chance of occurrence of a crime .
 
+
 To access the admin page, use username as `anshu` and password as `1234`
+To create new admin user, use `python3 manage.py createsuperuser` and enter required data which is asked.
 
 Use the following test cases
 1. Block- Aibawk , hour- 20 ---> result should be safe 
