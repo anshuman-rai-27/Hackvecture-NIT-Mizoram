@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'predict/style.css' %}">
+    <title>Crime Alert</title>
+<body>
+    <header>
+        <h2 class="logo">Crime Alert</h2>
+        <nav class="navigation">
+            <a href="#">Home<span></span></a>
+            <a href="#">Service<span></span></a>
+            <a href="#">About<span></span></a>
+            <a href="#">Contact<span></span></a>
+        </nav>
+    </header>
+
+    <form action="submit/" method="POST">
+        {% csrf_token %}
+       
+        
+       <div class="crime">
+        {{form}}
+
+       {% comment %} <h3 >State</h3> <input type="name" placeholder="State"> 
+      
+       <h3 >City</h3> <input type="name" placeholder="City"> 
+       <h3 >Block</h3> <input type="name" placeholder="Block"> <br> {% endcomment %}
+       <button class="final">Submit</button>
+        </div>
+    <div class="result">
+        {% if ff%}
+            <p>Risk factor:{{ff}}</p>
+            <a href="/predict">back</a>
+        {% else %}
+            <p>Please Enter the Data for result.</p>
+        {%endif%}
+    </div>
+       
+       </form>
+
+    
+      
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'predict/NIT Mizo_Mainpage.css' %}" >
+    <title>Crime Alert</title>
+<body>
+    <div>
+        <h2 class="logo">Crime Alert</h2>
+        <nav class="navigation">
+            <a href="#">Home<span></span></a>
+            <a href="#service">Service<span></span></a>
+            <a href="#">About<span></span></a>
+            <a href="#">Contact<span></span></a>
+        </nav>
+    </div>
+
+       
+<div class="wrapper">
+    <header>
+        <img src="{% static 'predict/img/bg1.jpg' %}" class="background">
+        <img src="{% static 'predict/img/for2.png' %}" class="foreground">
+    </header>
+    <section id="service">
+      <form action="submit/" method="POST">
+        {% csrf_token %}
+       
+        
+       <div class="crime">
+        {{form}}
+
+       {% comment %} <h3 >State</h3> <input type="name" placeholder="State"> 
+      
+       <h3 >City</h3> <input type="name" placeholder="City"> 
+       <h3 >Block</h3> <input type="name" placeholder="Block"> <br> {% endcomment %}
+       {% if ff%}
+       {%else%}
+       <button class="final">Submit</button>
+       {%endif%}
+        </div>
+    <div class="result">
+        {% if ff%}
+            <p>Risk factor:{{ff}}</p>
+            <a href="/predict">Click here to go back</a>
+            <a href="/admin">Add data from the admin Page</a>
+        {% else %}
+            <p>Please Enter the Data for result.</p>
+            <a href="/admin">Add data from the admin Page</a>
+        {%endif%}
+    </div>
+       
+       </form>  
+       </section>
+</div>
+
+
+    
+      
+
+    
+</body>
+</html>
