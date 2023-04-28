@@ -39,3 +39,9 @@ Use the following test cases
 Here, all the data inserted in the database, most of the crimes are registered in the time window 3-4 am.
 
 [Visit Website](https://hackvecture-nit-mizoram.anshumanrai2.repl.co/predict/)
+
+Contributions:
+Priyanshu Das - Frontend, Backend 
+Rudransh Srivastav -Backend 
+Anshuman Rai- Backend
+Rohit Kumar - Backend 
