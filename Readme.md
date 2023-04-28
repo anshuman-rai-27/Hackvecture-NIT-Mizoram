@@ -43,7 +43,7 @@ Here, all the data inserted in the database, most of the crimes are registered i
 Contributions:
 Priyanshu Das - Frontend, Backend 
 Rudransh Srivastav -Backend 
-Anshuman Rai- Backend
-Rohit Kumar - Backend 
+Anshuman Rai- Backend, frontend
+Rohit Kumar - Backend.
 
 It was a nice experience.
