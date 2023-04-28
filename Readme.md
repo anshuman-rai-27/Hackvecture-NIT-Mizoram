@@ -24,3 +24,14 @@ As said before, our website works on a real criminal act based database updated 
 1. Checking the advisory as a user. 
 2. Updating the database as an admin.
 Our website checks the frequency of  criminal acts in a 2 hour wide window around the required time in the required location, it predicts the chance of occurrence of a crime .
+
+To access the admin page, use username as `anshu` and password as `1234`
+
+Use the following test cases
+1. Block- Aibawk , hour- 20 ---> result should be safe 
+2. Block - Aibawk, hour- 3 ---> result should be high risk
+3. Block - Aibawk, hour- 5 ---> result should be moderate
+4. Block Aibawk, hour -6  ---> result should be moderate
+5. Block - Darlawn , hour- 6 ---> result should be safe
+
+Here, all the data inserted in the database, most of the crimes are registered in the time window 3-4 am.
